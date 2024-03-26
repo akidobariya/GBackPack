@@ -1,0 +1,272 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogone Page</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="{% static 'css/web.css' %}">
+
+    <!-- Bootstrap 5 Link -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- fa fa 6 link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+<body>
+
+    <!--  Scroll Back to Top On One CLick  -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <div class="container-fluid p-0 bg-danger text-light" style="height: 35px;">
+        <p class="fontsize14 text-end pt-2" style="margin-right: 110px;">FREE DELIVERY OVER $100 ON ALL PRODUCTS</p>
+    </div>
+
+    <!--  NAVBAR START  -->
+    <div class="container-fluid p-0 sticky-top">
+        <nav class="navbar navbar-expand-sm bg-light ps-md-5 pe-md-5">
+          <div class="container-fluid">
+            <img src="{% static 'img/3.png' %}" alt="" style="height: 40px;width: 150px" class="ms-md-5 ms-3">
+            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link mt-md-0 mt-3 ms-md-0 ms-3" href="home"><p class="link1 mt-md-2 mt-0 mb-0">HOME</p></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-md-4 ms-3" href="shop"><p class="link1 mt-md-2 mt-0 mb-0">SHOP</p></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-md-4 ms-3" href="blog"><p class="text-danger mt-md-2 mt-0 mb-0">BLOG</p></a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link ms-md-4 ms-3" href="contact"><p class="link1 mt-md-2 mt-0 mb-0">CONTACT</p></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-md-4 ms-3" href="myaccount"><p class="link1 mt-md-2 mt-0 mb-0">MY ACCOUNT</p></a>
+                </li>    
+                <li class="nav-item">
+                  <a href="cart"><i class="fa-solid fa-bag-shopping mt-md-3 mt-0 ms-md-4 ms-3 fontsize21 link1"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    <!--  NAVBAR END  -->
+
+
+    <div class="container-fluid p-0" style="background-color: #f5f5f5;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-6 mt-5 mb-5">
+                    <p class="ms-md-2 ms-5 fontsize25">Blog</p>
+                </div>
+                <div class="col-md-3 col-1"></div>
+                <div class="col-md-3 col-5 mt-5 mb-5">
+                    <a href="shop" class="link1">
+                        <span class="fontsize15 ms-md-5 ms-0 mt-3">> Blog</span>
+                    </a>
+                    <a href="shop" class="link1">
+                        <span class="fontsize15 mt-3">> Vestibulum sapin prin quam</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <center><img src="{% static 'img/13.png'%}" alt="" class="col-md-10 col-11 height750 mt-md-5 mt-0"></center>
+    </div>
+
+    <div class="container p-5">
+            <center>
+            <p class="padding fontsize35"><b>Vestibulum sapin prin quam</b></p>
+            <hr style="width: 75%;">
+            <p class="padding fontsize15">oceanwp - February 20, 2017 - Tips - 0 Comments</p>
+            <hr style="width: 75%;">
+            </center>
+
+            <p class="padding  fontsize16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+
+            <p class="padding  fontsize16">Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor. Morbi lectus risus, iaculis vel, suscipit quis, luctus non, massa. Fusce ac turpis quis ligula lacinia aliquet. Mauris ipsum. Nulla metus metus, ullamcorper vel, tincidunt sed, euismod in, nibh.</p>
+
+            <p class="padding  fontsize16">Quisque volutpat condimentum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices. Suspendisse in justo eu magna luctus suscipit. Sed lectus. Integer euismod lacus luctus magna.</p>
+
+            <p class="padding fontsize20"><b>Vestibulum lacinia arcu</b></p>
+
+            <p class="padding  fontsize16">Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem, at interdum magna augue eget diam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue. Vestibulum tincidunt malesuada tellus. Ut ultrices ultrices enim. Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi.</p>
+
+            <p class="padding  fontsize16">Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante.</p>
+
+            <p class="padding  fontsize16">Aenean lectus elit, fermentum non, convallis id, sagittis at, neque. Nullam mauris orci, aliquet et, iaculis et, viverra vitae, ligula. Nulla ut felis in purus aliquam imperdiet. Maecenas aliquet mollis lectus. Vivamus consectetuer risus et tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
+    </div>
+
+    <center><hr style="width: 85%;"></center>
+
+    <div class="container mt-5 mt-md-5">
+        <div class="row">
+            <div class="col-md-3">
+                <p class="fontsize18 text-md-center text-start ms-md-0 ms-4"><b>PLEASE SHARE THIS</b></p>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="div3 p-2 ms-md-5 ms-4">
+                    <center>
+                        <span><i class="fa-brands fa-twitter textclrwhite"></i></span>
+                        <span class="ms-4"><b>Twitter</b></span>
+                    </center>
+                </div>
+            </div>
+            <div class="col-md-2 col-6">
+                <div class="div3 p-2 ms-md-5 ms-4">
+                    <center>
+                        <span><i class="fa-brands fa-facebook-f textclrwhite"></i></span>
+                        <span class="ms-4"><b>Facebook</b></span>
+                    </center>
+                </div>
+            </div>
+            <div class="col-md-2 col-6 mt-md-0 mt-3">
+                <div class="div3 p-2 ms-md-5 ms-4">
+                    <center>
+                        <span><i class="fa-brands fa-pinterest-p textclrwhite"></i></span>
+                        <span class="ms-4"><b>Pinterest</b></span>
+                    </center>
+                </div>
+            </div>
+            <div class="col-md-2 col-6 mt-md-0 mt-3">
+                <div class="div3 p-2 ms-md-5 ms-4">
+                    <center>
+                        <span><i class="fa-brands fa-linkedin-in textclrwhite"></i></span>
+                        <span class="ms-4"><b>Linkdin</b></span>
+                    </center>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+    <center><hr style="width: 85%;" class="mt-5"></center>
+
+    <div class="container mt-md-4 mt-3">
+        <p class="fontsize18 ms-md-5 ms-4"><b> > YOU MIGHT ALSO LIKE</b></p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class=" backgroundimage8 p-0">
+                    <div class="imagehover1 p-0"></div></div>
+                        <div class="container-fluid p-0">
+                            <center><p class="link1 fontsize25 ms-md-3 ms-2 mt-md-2 mt-3 mb-1"><b>Praesent libro se cursus ante</b></p>
+                            <span class="fontsize15 ms-md-3 ms-2">February 20, 2017</span><br></center>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" backgroundimage9 p-0">
+                    <div class="imagehover1 p-0"></div></div>
+                        <div class="container-fluid p-0">
+                            <center><p class="link1 fontsize25 ms-md-3 ms-2 mt-md-2 mt-3 mb-1"><b>Litora torqent per conubia</b></p>
+                            <span class="fontsize15 ms-md-3 ms-2">February 20, 2017</span><br></center>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class=" backgroundimage10 p-0">
+                    <div class="imagehover1 p-0"></div></div>
+                        <div class="container-fluid p-0">
+                            <center><p class="link1 fontsize25 ms-md-3 ms-2 mt-md-2 mt-3 mb-1"><b>Duis sagitis ipsum prasent</b></p>
+                            <span class="fontsize15 ms-md-3 ms-2">February 20, 2017</span><br></center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <center><hr style="width: 60%;" class="mt-5"></center>
+
+    <div class="container mt-md-5 mt-4">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <p class="fontsize25 ms-md-0 ms-4"><b>Leave a Reply</b></p>
+                <p class="fontsize15 ms-md-0 ms-4">You must be logged in to post a comment.</p>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+
+
+    <!--  FOOTER START -->
+    <div class="container-fluid backgroundcolor1 textclrwhite mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 mt-5">
+              <p class="mt-4 color2 text-center text-md-start">CONTACT INFO</p>
+              <p class="mt-4 color2 ms-md-5 ms-3 mt-md-4">London Eye, London, United Kingdom</p>
+              <p class="color2 ms-md-5 ms-3">621-254-2147</p>
+              <p class="color2 ms-md-5 ms-3">contact@gmail.com</p>
+            </div>
+            <div class="col-md-3 mt-4 mt-md-5">
+              <p class="mt-4 ms-md-5 ms-3 mb-md-4 mb-4 color2 text-center text-md-start">INFORMATION</p>
+              <a href="home" class="link ms-md-5 ms-3">About Us</a><br>
+              <a href="home" class="link ms-md-5 ms-3">Store Location</a><br>
+              <a href="home" class="link ms-md-5 ms-3">Contact Us</a><br>
+              <a href="home" class="link ms-md-5 ms-3">Shipping & Delivery</a><br>
+              <a href="home" class="link ms-md-5 ms-3">Latest News</a>
+            </div>
+            <div class="col-md-3 mt-4 mt-md-5">
+              <p class="mt-4 ms-md-5 ms-3 mb-md-4 mb-4 color2 text-center text-md-start">OUR SERVICE</p>
+              <a href="home" class="link ms-md-5 ms-3">About Us</a><br>
+              <a href="home" class="link ms-md-5 ms-3">Store Location</a><br>
+              <a href="home" class="link ms-md-5 ms-3">Contact Us</a><br>
+              <a href="home" class="link ms-md-5 ms-3">Shipping & Delivery</a><br>
+              <a href="home" class="link ms-md-5 ms-3">Latest News</a>
+            </div>
+            <div class="col-md-3 mt-4 mt-md-5">
+              <p class="mt-4 ms-md-5 ms-3 mb-md-4 mb-4 color2 text-center text-md-start">NEWSLETTER</p>
+              <div class="col-md-12 div2">
+                <input type="email" placeholder="Enter Your Email." class=" col-md-12 col-12 p-2 text-light " style="background-color: rgb(51, 49, 49);border: none;outline: none;" >
+                <center><input type="submit" value="GO" class="col-md-4 col-4 button1 p-2 mt-2" style="border:none;outline: none;border-radius: 20px"></center>
+              </div>
+                <input type="checkbox" id="scales" name="scales" class="mt-3">
+                <span>GDPR Checkbox Label</span><br><br>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-fluid backgroundcolorblack">
+        <p class="text-light text-center p-2 mb-0">© COPYRIGHT - 2024</p>
+      </div>
+      <!--  FOOTER END -->
+
+
+<script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+</script>
+  
+</body>
+</html>

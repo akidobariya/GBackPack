@@ -1,0 +1,783 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="{% static 'css/web.css' %}">
+
+    <!-- Bootstrap 5 Link -->
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- fa fa 6 link -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!--  Scroll Back to Top On One CLick  -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <div class="container-fluid p-0 bg-danger text-light" style="height: 35px;">
+            <p class="fontsize14 text-end pt-2" style="margin-right: 110px;">FREE DELIVERY OVER $100 ON ALL PRODUCTS</p>
+    </div>
+    
+    <!--  NAVBAR START  -->
+    <div class="container-fluid p-0 sticky-top">
+      <nav class="navbar navbar-expand-sm bg-light ps-md-5 pe-md-5">
+        <div class="container-fluid">
+          <img src="{% static 'img/3.png' %}" alt="" style="height: 40px;width: 150px" class="ms-md-5 ms-3">
+          <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link mt-md-0 mt-3 ms-md-0 ms-3" href="home"><p class="text-danger mt-md-2 mt-0 mb-0">HOME</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-md-4 ms-3" href="shop"><p class="link1 mt-md-2 mt-0 mb-0">SHOP</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-md-4 ms-3" href="blog"><p class="link1 mt-md-2 mt-0 mb-0">BLOG</p></a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link ms-md-4 ms-3" href="contact"><p class="link1 mt-md-2 mt-0 mb-0">CONTACT</p></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ms-md-4 ms-3" href="myaccount"><p class="link1 mt-md-2 mt-0 mb-0">MY ACCOUNT</p></a>
+              </li>    
+              <li class="nav-item">
+                <a href="cart"><i class="fa-solid fa-bag-shopping mt-md-3 mt-0 ms-md-4 ms-3 fontsize21 link1"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--  NAVBAR END  -->
+
+
+    <div class="container-fluid p-0">
+      <div class="backgroundimage1">
+        <div class="transfrontclr">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-1"></div>
+                <div class="col-md-11">
+                  <div style="height: 240px;"></div>
+                  <p class="fontsize13 text-light ms-md-3 ms-2 mb-0"><b>NULLAM MAXIMUS SEMPER EST</b></p>
+                  <p class="fontsize63 text-light ms-md-3 ms-2 pt-0"><b>PERFECT FOR <br> THE OUTDOORS</b></p>
+                  <p class="fontsize13 text-light ms-md-3 ms-2 mb-0 col-md-5 col-11">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                  <button class="col-md-2 col-5 mt-3 ms-md-3 ms-2 p-md-3 p-3 button1"><b>DISCOVER NOW</b></button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container mt-5 ps-5 pe-5 pt-5">
+      <div class="row">
+        <div class="col-md-4 col-4 p-1 p-md-0">
+          <center>
+            <i class="fa-solid fa-plane fontsize80 colorred"></i>
+            <p class="mt-md-3 mt-2"><b>TRAVEL</b></p>
+            <p class="col-md-12 col-12">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </center>
+        </div>
+        <div class="col-md-4 col-4 p-1 p-md-0">
+          <center>
+            <i class="fa-solid fa-book fontsize80 colorred"></i>
+            <p class="mt-md-3 mt-2"><b>STUDY</b></p>
+            <p class="col-md-12 col-12">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </center>
+        </div>
+        <div class="col-md-4 col-4 p-1 p-md-0">
+          <center>
+            <i class="fa-solid fa-compass fontsize80 colorred"></i>
+            <p class="mt-md-3 mt-2"><b>VACTION</b></p>
+            <p class="col-md-12 col-12">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-5">
+      <div class="row">
+        <div class="col-md-4 col-4 p-1 p-md-0">
+          <center>
+            <i class="fa-solid fa-folder fontsize80 colorred"></i>
+            <p class="mt-md-3 mt-2"><b>WORK</b></p>
+            <p class="col-md-12 col-12">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </center>
+        </div>
+        <div class="col-md-4 col-4 p-1 p-md-0">
+          <center>
+            <i class="fa-solid fa-person-hiking fontsize80 colorred"></i>
+            <p class="mt-md-3 mt-2"><b>HIKING</b></p>
+            <p class="col-md-12 col-12">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </center>
+        </div>
+        <div class="col-md-4 col-4 p-1 p-md-0">
+          <center>
+            <i class="fa-solid fa-heart fontsize80 colorred"></i>
+            <p class="mt-md-3 mt-2"><b>FITNESS</b></p>
+            <p class="col-md-12 col-12">Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-md-5 mt-0">
+      <div class="row">
+        <div class="col-md-6 mt-md-5 mt-0">
+          <div class="div1"></div>
+          <p class="text-secondary mt-md-5 mt-0 ms-4 ms-md-5 fontsize13">ABOUT OUR COMPANY</p>
+          <p class="text-dark ms-4 ms-md-5 fontsize35"><b>BEST BRAND BEST QUALITY</b></p>
+          <p class="text-secondary ms-4 ms-md-5 fontsize15 col-md-10 col-11">Sed maximus ante vel ipsum euismod maximus. Sed efficitur semper lacus, sit amet facilisis nulla gravida sit amet. Vivamus eleifend, elit eget scelerisque pulvinar, augue dui rutrum tellus, porta scelerisque purus mi a enim. Nulla eget nunc convallis, blandit leo ut, iaculis orci. Ut condimentum molestie ex nec lacinia.</p>
+
+          <p class="text-secondary ms-4 ms-md-5 fontsize15 col-md-10 col-11">Morbi aliquet interdum nisi, id pulvinar enim elementum quis. Praesent tincidunt nisi ac purus hendrerit, non molestie eros malesuada. Pellentesque porta neque eu metus efficitur, ut commodo diam tempus.</p>
+
+          <button class="col-md-4 col-5 mt-3 ms-md-5 ms-4 p-md-3 p-3 button1"><b>MORE ABOUT US</b></button>
+        </div>
+        <div class="col-md-6 mt-md-3 mt-4">
+          <img src="{% static 'img/2.png' %}" alt="" height="100%" width="100%">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container ps-md-5 pe-md-5 mt-md-5 mt-3">
+      <div class="row">
+        <div class="col-md-3 col-6">
+          <center>
+            <p class="color1 fontsize60 mb-0"><b>68</b></p>
+            <p class="mt-2"><b>BEST BRANDS</b></p>
+          </center>
+          
+        </div>
+        <div class="col-md-3 col-6">
+          <center>
+            <p class="color1 fontsize60 mb-0"><b>99+</b></p>
+            <p class="mt-2"><b>QUALITY PRODUCTS</b></p>
+          </center>
+          
+        </div>
+        <div class="col-md-3 col-6">
+          <center>
+            <p class="color1 fontsize60 mb-0"><b>16</b></p>
+            <p class="mt-2"><b>TOP CATEGORIES</b></p>
+          </center>
+          
+        </div>
+        <div class="col-md-3 col-6">
+          <center>
+            <p class="color1 fontsize60 mb-0"><b>5K</b></p>
+            <p class="mt-2"><b>HAPPY CUSTOMERS</b></p>
+          </center>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container-fluid backgroundcolor mt-md-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <center>
+              <i class="fa-solid fa-quote-left fontsize80 colorred p-md-5 mt-md-5 mt-5"></i>
+              <p class="fontsize18 col-md-11 mt-3 mt-md-0">Aliquam dignissim lacinia tristique nulla lobortis nunc ac eros scelerisque varius suspendisse sit amet urna vitae urna semper quis at ligula.</p>
+              <img src="{% static 'img/4.jpg' %}" alt="" height="13%" width="13%" style="border-radius: 50px;" class="mt-3">
+              <p class="fontsize17 mb-0">SOFIA MILLER</p>
+              <p class="text-secondary fontsize13">5 start</p>
+            </center>
+          </div>
+          <div class="col-md-6">
+            <center>
+              <i class="fa-solid fa-quote-left fontsize80 colorred p-md-5 mt-md-5 mt-4"></i>
+              <p class="fontsize18 col-md-11 mt-3 mt-md-0">Aliquam dignissim lacinia tristique nulla lobortis nunc ac eros scelerisque varius suspendisse sit amet urna vitae urna semper quis at ligula.</p>
+              <img src="{% static 'img/5.jpg' %}" alt="" height="13%" width="13%" style="border-radius: 50px;" class="mt-3">
+              <p class="fontsize17 mb-0">SOFIA MILLER</p>
+              <p class="text-secondary fontsize13">5 start</p>
+            </center>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <center>
+              <i class="fa-solid fa-quote-left fontsize80 colorred p-md-5 mt-md-2 mt-5"></i>
+              <p class="fontsize18 col-md-11 mt-3 mt-md-0">Aliquam dignissim lacinia tristique nulla lobortis nunc ac eros scelerisque varius suspendisse sit amet urna vitae urna semper quis at ligula.</p>
+              <img src="{% static 'img/6.jpg' %}" alt="" height="13%" width="13%" style="border-radius: 50px;" class="mt-3">
+              <p class="fontsize17 mb-0">SOFIA MILLER</p>
+              <p class="text-secondary fontsize13">5 start</p>
+            </center>
+          </div>
+          <div class="col-md-6">
+            <center>
+              <i class="fa-solid fa-quote-left fontsize80 colorred p-md-5 mt-md-2 mt-5"></i>
+              <p class="fontsize18 col-md-11 mt-3 mt-md-0">Aliquam dignissim lacinia tristique nulla lobortis nunc ac eros scelerisque varius suspendisse sit amet urna vitae urna semper quis at ligula.</p>
+              <img src="{% static 'img/7.jpg' %}" alt="" height="13%" width="13%" style="border-radius: 50px;" class="mt-3">
+              <p class="fontsize17 mb-0">SOFIA MILLER</p>
+              <p class="text-secondary fontsize13">5 start</p>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--  FOOTER START -->
+    <div class="container-fluid backgroundcolor1 textclrwhite">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mt-5">
+            <p class="mt-4 color2 text-center text-md-start">CONTACT INFO</p>
+            <p class="mt-4 color2 ms-md-5 ms-3 mt-md-4">London Eye, London, United Kingdom</p>
+            <p class="color2 ms-md-5 ms-3">621-254-2147</p>
+            <p class="color2 ms-md-5 ms-3">contact@gmail.com</p>
+          </div>
+          <div class="col-md-3 mt-4 mt-md-5">
+            <p class="mt-4 ms-md-5 ms-3 mb-md-4 mb-4 color2 text-center text-md-start">INFORMATION</p>
+            <a href="home" class="link ms-md-5 ms-3">About Us</a><br>
+            <a href="home" class="link ms-md-5 ms-3">Store Location</a><br>
+            <a href="home" class="link ms-md-5 ms-3">Contact Us</a><br>
+            <a href="home" class="link ms-md-5 ms-3">Shipping & Delivery</a><br>
+            <a href="home" class="link ms-md-5 ms-3">Latest News</a>
+          </div>
+          <div class="col-md-3 mt-4 mt-md-5">
+            <p class="mt-4 ms-md-5 ms-3 mb-md-4 mb-4 color2 text-center text-md-start">OUR SERVICE</p>
+            <a href="home" class="link ms-md-5 ms-3">About Us</a><br>
+            <a href="home" class="link ms-md-5 ms-3">Store Location</a><br>
+            <a href="home" class="link ms-md-5 ms-3">Contact Us</a><br>
+            <a href="home" class="link ms-md-5 ms-3">Shipping & Delivery</a><br>
+            <a href="home" class="link ms-md-5 ms-3">Latest News</a>
+          </div>
+          <div class="col-md-3 mt-4 mt-md-5">
+            <p class="mt-4 ms-md-5 ms-3 mb-md-4 mb-4 color2 text-center text-md-start">NEWSLETTER</p>
+            <div class="col-md-12 div2">
+              <input type="email" placeholder="Enter Your Email." class=" col-md-12 col-12 p-2 text-light " style="background-color: rgb(51, 49, 49);border: none;outline: none;" >
+              <center><input type="submit" value="GO" class="col-md-4 col-4 button1 p-2 mt-2" style="border:none;outline: none;border-radius: 20px"></center>
+            </div>
+              <input type="checkbox" id="scales" name="scales" class="mt-3">
+              <span>GDPR Checkbox Label</span><br><br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid backgroundcolorblack">
+      <p class="text-light text-center p-2 mb-0">© COPYRIGHT - 2024</p>
+    </div>
+    <!--  FOOTER END -->
+
+
+<script>
+  // Get the button
+  let mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!-- 
+     1. we have done all basic staps ( startproject / cd project / startapp / runproject in cmd / transfar in    vscode
+     2. setting -> INSTALLED_APPS -> 'write app name.'
+     3. go to application of project -> make templates folder -> make index.html file -> swift+1 -> Write {% load static %} First -> <h1>Home</h1>  -> go to settings.py -> TEMPLATES -> specify templates folder [ 'DIRS': ['templates'],]
+     4. go to views.py -> make function like,
+        def home(request):
+            return render(render, "index.html")
+     5. go to urls.py -> import views.py  [ from application import views ]
+        urlpatterns = [
+            path('admin/', admin.site.urls),
+            path('home',views.home)
+            ]
+        [ In index.html file we can write internal css , inline css  ]
+        [ For Image in index.html like  ->  <img src="{% static 'img/3.png' %}" alt="" style="height: 40px;width: 150px" class="ms-md-5 ms-3"> ]
+        [ For a href  ->  ]
+
+     6. For use external css , images , and external javascript code....
+        i.   make static folder in application.
+        ii.  application -> static -> css -> css name [ web.css ]
+             applicarion -> static -> img -> image name
+             application -> stativ -> javascript -> javascript file name.
+
+     7. go to index.html -> {% load static %}  and connect css in <head> tag like this 
+            [ <link rel="stylesheet" href="{% static 'css/web.css' %}"> ] as well as in image 
+            [ <img src="{% static 'image/tiger.jpg' %}" alt="" class="image"> ]
+
+     8. go to settings.py -> and specify static folder like,
+            STATICFILES_DIRS = [
+                BASE_DIR / "static",
+                ]
+
+            ) -->
+
+
+
+    <!--
+      =>  Show data from website to Sqllite3 database.
+
+    1. python manage.py ( in only v.s code )  ->  Show All the Sub-Commends of python 
+    2. python manage.py makemigrations  ->  show all the changes of Sqllite Database And it Store in migrations folder and it will make default file in this folder. 
+    3. python manage.py migrate  ->  Apply all the changes in Our Database, which we did in our V.S Code ..
+    4.  ( http://127.0.0.1:8000/admin )  ->  if we want to go database than take a new powershell in v.s code and run second and third commend firstly, and take new tab in crome after 8000 we have to write admin or database login page will be open in crome. If admin panel isn't show on crome than firstly create superuser and password in v.s code.
+    5. python manage.py createsuperuser   ->  ( We can create multiple super-user in Sqllite3 database ) For using a create user in Sqllite3 Database  ->  First write user name  ->  Second email address (Not Complasory )  ->  Third password  -> Fourth Again Password  -> if you keep short password in database than write y , or not than change password & n. 
+    6. Once again we have to run second ( python manage.py makemigrations ) and third ( python manage.py migrate ) commend ( it's Complasory ).
+    7. open admin panel( http://127.0.0.1:8000/admin ) -> login in sqllite3 database  ->  form here we can show admin panel on crome broswer.
+    8. Once we login in sqllite3 Database than go to V.S Code.
+
+    <  CODE  >
+
+    9.[ contact.html ]
+          Firstly we start <form> tag and give <action name  & method [get/post] >
+          GET( Default Method ) => jo apde get method use karisu to output url ma data show karse je apde upload kariyo hase.
+          POST Method => post method thi data jetlo pan upload karisu pan url ma show nai thai.. 
+        If we use POST method than we have to use {% csrf_token %} complasory.
+        Than, we have to give name="" to all input type. 
+
+              <form action="contactdata" method="post">
+                {% csrf_token %}
+                  <span><input type="text" name="firstname" placeholder="First Name*" class="mt-5 col-md-12 col-12 p-2 fontsize17" style="background-color: #fcfcfc;border:1px solid rgb(234, 231, 231);outline: none;"></span>                    
+                  <textarea name="commentormessage" class="col-md-11 col-11 mt-md-4 mt-3 ms-md-3 ms-3" placeholder="Comment or Message*" style="height: 150px;background-color: #fcfcfc;border:1px solid rgb(234, 231, 231);"></textarea>
+                  <input type="submit" value="SEND-MESSAGE" class="col-md-4 col-5 mt-3 ms-md-3 ms-3 p-md-3 p-3 button1">                
+              </form>    
+              
+    10.[ models.py ] : Now, we will create model. 
+        => Apde jetla field no data upload karvano hase te rite model banse. And models ni field ma change karisu to views.py ma pan change karvu padse. and once again makemigration , migrate commend run karvu padse.
+
+                class contactinformation(models.Model):
+                  fname = models.CharField(max_length=50)                                    
+                  address = models.TextField()
+
+                  def __str__(self):
+                      return self.fname
+
+    11. [ admin.py ] : For register of models class we have to use admin.py
+
+        from application.models import contactinformation
+        from application.models import *    [ for using all class register. ]
+
+        admin.site.register(contactinformation)
+
+    12. [ urls.py ] : 
+        from application import views [ firstly we have to import views in urls.py ]
+
+        urlpatterns = [
+          path('contactdata',views.contactdata1),
+        ]
+        [=> 'contactdata' same as form action name. && ,views.contactdata1 same as views function name. ]
+
+    13.[ views.py ] : 'firstname' is come from comtect.html => <form> tag => <input type="text" name="firstname">
+          => fn is a new veriable for store data.
+          => Then, we will create new object and write model class name contactinformation 
+              (model field name = views field name ) and then save object
+          => After sending data where we will redirect ? => for redirect we will write return render(request,   "contact.html")
+
+              def contactdata1(request):
+                fn = request.POST['firstname']
+                commentandmessage = request.POST['commentormessage']
+
+                obj = contactinformation(fname=fn,address=commentandmessage)
+                obj.save()
+
+                return render(request, "contact.html")
+   -->
+
+
+
+   <!--    Login Data ..
+
+    1. Firstly, Give form action & method and {% csrf_token %} and write name in usename and password field in myaccount.html file.
+    2. Secondly, Goto urls.py and write   =>  path('form action name', views.logincheck [views function name] ),
+
+    3. Thirdly, goto views.py and write function name which we written in urls.py and store value in other variable/object with POST method.
+        => Then, we will call value and store in object like this =>   obj = RegisterData1.objects.all()
+        => Because of multiple value will start for loop and in loop we use if condtion that id username == i.username(RegisterData1=>username,password) is match with register data then return render at 'index.html'
+
+        def logincheck(request):
+          username=request.POST['username']
+          userpassword=request.POST['userpass']
+
+          obj = RegisterData1.objects.all()
+
+          for i in obj:
+            if username==i.username and userpassword==i.password:
+              return render(request,'index.html')
+
+   -->
+
+
+
+
+   <!--    Alert Message... 
+
+    1.[ contact.html ] 
+       Bootstrap 5 tutorial => take Alert Message design => goto crome(message django search(https://docs.djangoproject.com/en/5.0/ref/contrib/messages/)) => copy some field and set in bootstrep design.
+    [
+      {% for message in messages %}
+        {{ message.tags }}  {{ message }}
+      {% endfor %}
+    ]
+
+        {% for message in messages %}
+          <div class="alert alert-{{ message.tags }} alert-dismissible mt-4">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>!! GBACKPAKE !! </strong> {{ message }}
+          </div>
+        {% endfor %}
+
+    2. [ views.py ] =>  
+    firstly start if condition that if fn==""(empty) than print warning message that "Value Can't Be Empty 🫤" or return "contact.html".
+    in else condition user fill all data and will press submit button than print  success message "Data SuccessFully Sent ...😊" or return in "contact.html".
+
+
+          def contactdata1(request):
+            fn = request.POST['firstname']
+            ln = request.POST['lastname']
+            emailid = request.POST['emailaddress']
+            commentandmessage = request.POST['commentormessage']
+
+            if(fn=="" or ln=="" or emailid=="" or commentandmessage==""):
+                messages.warning(request, "Value Can't Be Empty 🫤")
+                return render(request, "contact.html")
+            else:
+                obj = contactinformation(fname=fn,lname=ln,email=emailid,address=commentandmessage)
+                obj.save()
+
+                messages.success(request, "Data SuccessFully Sent ...😊")
+                return render(request, "contact.html")
+
+    -->
+
+
+    <!-- UPLOAD IMAGE ON SHOP PAGE... FROM DATA BASE..
+    
+      1. [ models.py ]: First of all we will make Model in models.py. In this model Will create fields which we want to upload in one time. Like...
+
+        class ShopProduct(models.Model):
+          productname1 = models.CharField(max_length=50)
+          productprice1 = models.IntegerField()
+          productimage=models.ImageField(upload_to='image/')
+
+
+          def __str__(self):
+              return self.productname1
+
+        => In this model will are creating 3 field. name, price, and image. 
+
+      2. [ admin.py ]: we will import and register model in admin.py file. Like, 
+
+           from application.models import RegisterData, contactinformation, ShopProduct
+           admin.site.register(ShopProduct)
+      
+      3. run commend,  python manage.py makemigrations   and    python manage.py migrate. And check database that folder and fields are there or not..?
+
+      4. javapoint.com
+
+
+
+    -->
+
+
+
+    <!-- PASS IMAGE DATA FROM SHOP PAGE TO CART PAGE ( BUT ONLY SINGLE DATA , DON'T MULTIPLE DATA.. )
+      
+      1. shop.html => id, form action, name, for loop.
+      2. urls.py => path('cartdata',views.cartdata),
+      3. views.py =>
+        def cartdata(request):
+          value=request.GET['val']
+
+          obj=ShopProduct.objects.all().filter(id=value)
+          return render(request,'cart.html',{'data':obj}) => for loop name..
+
+      4. cart.html
+        <table border="5px">
+          <tr>
+            <th>ID</th>
+            <th>IMAGE</th>
+            <th>NAME</th>
+            <th>PRICE</th>
+          </tr>
+          {% for i in data %}
+          <tr>
+            <td>{{i.id}}</td>
+            <td><img src="media/{{i.productimage}}" height="200px" width="200px"></td>
+            <td>{{i.productname1}}</td>
+            <td>{{i.productprice1}}</td>
+          </tr>
+          {% endfor %}
+
+        </table>
+    -->  
+     
+
+    <!-- PASS IMAGE DATA FROM SHOP PAGE TO CART PAGE ( BUT ONLY SINGLE DATA , DON'T MULTIPLE DATA.. && MESSAGE SHOW IN SHOP PAGE)
+
+      1. models.py 
+        class cartinfo(models.Model):
+          productname1 = models.CharField(max_length=50)
+          productprice1 = models.IntegerField()
+          productimage=models.ImageField(upload_to='image/')
+          producttotal=models.CharField(max_length=10,default=50)
+
+          def __str__(self):
+              return f"cart product -> {self.productname1}"
+
+      2.admin.py
+        admin.site.register(cartinfo)
+
+      3. shop.html
+        {% for message in messages %}
+          <div class="container alert alert-{{ message.tags }} alert-dismissible mt-4">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>!! GBACKPAKE !! </strong> {{ message }}
+          </div>
+        {% endfor %}
+
+              <form action="cartdata">
+                <center>
+                  <input type="text" name="val" value="{{i.id}}" hidden>
+                  <input type="text" name="nm" value="{{i.productname1}}" hidden>
+                  <input type="text" name="pr" value="{{i.productprice1}}" hidden>
+                  <input type="text" name="mg" value="{{i.productimage}}" hidden>
+                </center>
+                  <button class="button">ADD TO CART</button>
+              </form>
+
+                
+      4. views.py
+          def cartdata(request):
+            value=request.GET['val']
+            pnm=request.GET['nm']
+            prse=request.GET['pr']
+            mge=request.GET['mg']
+
+            obj=cartinfo(productname1=pnm,productprice1=prse,productimage=mge)
+            obj.save()
+            messages.success(request, "Data SuccessFully Sent On Cart Page..")
+            
+            obj=ShopProduct.objects.all()
+            return render(request, "shop.html",{'data':obj})
+
+     -->
+
+
+     <!-- DELETE DATA from Cart.html file...
+    
+      1. cart.html =>
+        <form action="deletedata">
+            <input type="text" name="val" value="{{i.id}}" hidden>
+            <input type="submit" value=" X ">
+        </form>
+
+      2. urls.py =>
+          path('deletedata',views.deletedata),
+
+      3. views.py =>
+        def deletedata(request):
+          value=request.GET['val']
+
+          obj=cartinfo.objects.get(id=value)
+          obj.delete()
+
+          obj2=cartinfo.objects.all()
+          return render(request,'cart.html',{'data':obj2})
+    -->
+
+
+    
+    <!-- Increase and Decrease value in cart.html
+    
+      1. cart.html =>
+        <form action="increase">
+              <input type="text" name="val" value="{{i.id}}" hidden>
+              <input type="submit" value=" + ">
+        </form>
+        <form action="decrease">
+                <input type="text" name="val" value="{{i.id}}" hidden>
+                <input type="submit" value=" - ">
+        </form>
+
+        we have to change {{i.producttotal}}
+        <p style="margin: 0px 0px 0px -65px;float: left;">{{i.producttotal}} RS</p>
+
+
+      2. models.py =>
+          class cartinfo(models.Model):
+            productname1 = models.CharField(max_length=50)
+            productprice1 = models.IntegerField()
+            productimage=models.ImageField(upload_to='image/')
+            producttotal=models.CharField(max_length=10,default=0)
+            productquantity=models.CharField(max_length=10,default=0)
+
+            def __str__(self):
+                return f"cart product => {self.productname1}"
+    
+      2. urls.py =>
+        path('increase',views.add),
+        path('decrease',views.subtraction),
+
+      3. views.py =>
+
+        def add(request):
+          value=request.GET['val']
+
+          obj=cartinfo.objects.get(id=value)
+
+          obj.productquantity=int(obj.productquantity)+1
+          obj.producttotal=int(obj.producttotal)+obj.productprice1
+          obj.save()
+
+          obj2=cartinfo.objects.all()
+          return render(request,'cart.html',{'data':obj2})
+        
+
+        def subtraction(request):
+          value=request.GET['val']
+
+          obj=cartinfo.objects.get(id=value)
+
+          obj.productquantity=int(obj.productquantity)-1
+          obj.producttotal=int(obj.producttotal)-obj.productprice1
+          obj.save()
+
+          obj2=cartinfo.objects.all()
+          return render(request,'cart.html',{'data':obj2})
+    -->
+
+
+
+    <!-- FORGOT PASSWORD..
+
+    1. Create forgotpassword.html.. and set url and create function in views.py.
+    2. forgotpassword.html =>
+              <div class="col-md-12" style="border:1px solid rgb(200, 200, 200)">
+                <form action="updatepassword" method="post">
+                {% csrf_token %}
+                  <p class="ms-3 mt-4 fontsize17">Username or email address *</p>
+                  <input type="text" name="uname" class="p-3 ms-3 col-md-11 col-11 fontsize19" style="background-color: #fcfcfc;border: 1px solid rgb(234, 231, 231)">
+                  <p class="ms-3 mt-4 fontsize17">New Password</p>
+                  <input type="password" name="npassword" class="p-3 ms-3 col-md-11 col-11 fontsize19" style="background-color: #fcfcfc;border: 1px solid rgb(234, 231, 231)"><br>
+                  <p class="ms-3 mt-4 fontsize17">Confirm Password</p>
+                  <input type="password" name="cpassword" class="p-3 ms-3 col-md-11 col-11 fontsize19" style="background-color: #fcfcfc;border: 1px solid rgb(234, 231, 231)"><br>
+
+                  <input type="checkbox" id="scales" name="scales" class="mt-4 mt-md-5 ms-md-3 ms-3">
+                  <span class="fontsize17">Remember me</span><br><br>
+                  <center><button class="col-md-6 p-2 col-8 button1 fontsize20"><b>Log in</b></button><br><br>                
+                  <a href="myaccount" style="text-decoration: none;"><span class="link1 fontsize18">Login Here !</span></center><br></a>
+                </form>
+              </div>
+      
+    3. urls.py  =>
+                  path('updatepassword',views.updatepassword1),
+
+    4. views.py  =>
+              def updatepassword1(request):
+                un = request.POST['uname']
+                npass = request.POST['npassword']
+                cpass = request.POST['cpassword']
+
+                obj=RegisterData1.objects.all()
+                for i in obj:
+                    if i.username==un:
+                        obj1=RegisterData1.objects.get(username=un)
+                        obj1.username=un
+                        obj1.password=cpass
+                        obj1.password=npass
+                        obj1.save()
+                        return render(request,'index.html')
+  -->
+
+
+  <!-- How to change old admin panel 
+    1. go to urls.py => peast three line after import ...
+        # admin.site.site_header = 'GBACKPACK'                 
+        # admin.site.index_title = 'GBACKPACK Admin'                 
+        # admin.site.site_title = 'website for bags'
+    -->
+
+
+  <!-- How to change new theme admin panel 
+  1. we have to run this commend  => pip install django-material-admin in terminal & cmd.
+  2. go to setting.py => goto INSTALLED_APPS => write 2 lines 
+       i.'material',
+       ii .'material.admin',
+      and,
+      if we add new theme in admin panel then third line =># 'django.contrib.admin',  => will be comment..
+      if we want old panel then, we have to comment i , ii line and uncomment third line.
+
+ -->
+
+
+ 
+<!-- 
+
+    => How to store data in Mysql commend line database ...
+
+    1. Goto settings.py => Goto database  => Earase(cancle) text in default...  => Peast it below code in there.
+
+        'default': {  
+            'ENGINE': 'django.db.backends.mysql',  
+            'NAME': 'djangoformdata', [ table_name which we make in database ] 
+            'USER': 'root',  
+            'PASSWORD': '1234',   [ database password => 1234 ]
+            'HOST': '127.0.0.1',  
+            'PORT': '3306',  
+            'OPTIONS': {  
+                'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"  
+            }  
+        }  
+
+
+    2.  JSON => JSON is a syntax for storing and exchanging data. 
+                JSON is text, written with JavaScript object notation.
+        [ We can store data in Key/Value Through Json. We have to get All data in Dictionary and store in One List. ]
+
+        Goto views.py => Write this code...  => We have to import JsonResponse.
+                        from django.http import JsonResponse
+
+                        def showdata(request):
+                            obj=list(data.objects.values())
+                            return JsonResponse(obj,safe=False)
+
+        Goto urls.py =>  Write one line...
+                        path('show',views.showdata), 
+ -->
