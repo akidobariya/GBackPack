@@ -329,6 +329,7 @@
             path('home',views.home)
             ]
         [ In index.html file we can write internal css , inline css  ]
+        [ For CSS Link => <link rel="stylesheet" href="{% static 'css/web.css' %}"> ]
         [ For Image in index.html like  ->  <img src="{% static 'img/3.png' %}" alt="" style="height: 40px;width: 150px" class="ms-md-5 ms-3"> ]
         [ For a href  ->  ]
 
@@ -336,7 +337,7 @@
         i.   make static folder in application.
         ii.  application -> static -> css -> css name [ web.css ]
              applicarion -> static -> img -> image name
-             application -> stativ -> javascript -> javascript file name.
+             application -> static -> javascript -> javascript file name.
 
      7. go to index.html -> {% load static %}  and connect css in <head> tag like this 
             [ <link rel="stylesheet" href="{% static 'css/web.css' %}"> ] as well as in image 
